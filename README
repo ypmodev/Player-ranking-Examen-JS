@@ -1,0 +1,51 @@
+# Ranking de jugadores
+
+**Descripción**: aplicación web para gestionar el ranking de jugadores de un juego. Permite introducir el nombre y la puntuación de un jugador mediante un formulario, validar los datos y mostrar un ranking ordenado de mayor a menor puntuación. Si el jugador ya existe, se actualiza su puntuación en lugar de duplicarlo.
+
+## 🛠 Tecnologías
+
+- Frontend: HTML5, JavaScript (ES Modules)
+- Testing: [Vitest]
+
+## 📁 Estructura del proyecto
+
+```text
+.
+├── index.html
+├── script/
+│   ├── main.js
+│   ├── ui.js
+│   ├── validate.js
+│   └── playersLogic.js
+├── test/
+│   └── test.playersLogic.test.js
+├── package.json
+└── .gitignore
+```
+
+## 🚀 Instalación
+
+1. Clonar el repositorio: `git clone <URL_DEL_REPOSITORIO>`
+2. Entrar en la carpeta del proyecto: `cd <NOMBRE_DEL_PROYECTO>`
+3. Instalar dependencias: `npm install`
+4. Variables de entorno: no son necesarias.
+
+### Ejecutar la aplicación
+
+Al usar módulos ES (`type="module"`), se debe ejecutar:
+
+- Con la extensión **Live Server** de Visual Studio Code (clic derecho en `index.html` → _Open with Live Server_).
+- O desde la terminal: `npx serve`
+
+## 🧪 Tests
+
+Los tests unitarios están hechos con Vitest
+
+```bash
+# Modo watch
+npm test
+
+# Ejecución única
+npx vitest run
+``
+```
