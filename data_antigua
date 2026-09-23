@@ -1,0 +1,43 @@
+//main 
+
+
+const players = [];
+const form = document.querySelector("form");
+
+const inputName = getInputName();
+const inputScore = getInputScore();
+
+
+//DOM
+
+
+function addPlayers(inputName, inputScore) {
+  const players = { name: inputName, score: inputScore };
+}
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const resultValidate = validate(getInputName(), getInputScore());
+
+  if (resultValidate) {
+    players.push(addPlayers);
+    renderScore(players);
+
+    clearInputName();
+    clearInputScore();
+  }
+});
+function add{
+is (resultValidate){
+   
+    array.forEach(element => {
+        const resultName = !(players => players.name === inputName);
+        players.push(addPlayers)
+        renderScore(players);
+        
+    });
+}
+
+
+}
+

@@ -17,4 +17,4 @@ export function validate(inputName, inputScore) {
   return true;
 }
 
-const resultValidate = validate();
+
