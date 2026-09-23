@@ -4,7 +4,7 @@ const inputSc = document.querySelector("#score");
 const inputName = inputNa.value.trim().toLowerCase();
 const inputScore = inputSc.value.trim();
 
-function validate(inputName, inputScore) {
+export function validate(inputName, inputScore) {
   if (
     inputName == "" ||
     inputScore == "" ||
@@ -17,4 +17,4 @@ function validate(inputName, inputScore) {
   return true;
 }
 
-console.log(validate());
+const resultValidate = validate();
