@@ -1,17 +1,29 @@
-const inputNa = document.querySelector("#name");
-const inputSc = document.querySelector("#score");
-const formData = document.querySelector("#form");
 const message = document.querySelector("#message");
+const scoreList = document.querySelector("#scoreList");
 
-function getInputName(inputNa) {
-  return inputNa.value;
+export function getInputName(inputName) {
+  return inputName.value.trim().toLowerCase();
 }
-function getInputName(inputSc) {
-  return inputSc.value;
+export function getInputScore(inputScore) {
+  return inputScore.value.trim();
 }
 
-function showMessage(resultValidate) {
-  if (!resultValidate) {
-    message.textcontent = "Los datos introducidos no son correctos";
-  }
+export function clearInputName(inputName) {
+  inputName.value = "";
+}
+export function clearInputScore(inputScore) {
+  inputScore.value = "";
+}
+
+export function showMessage(text) {
+  message.textContent = text;
+}
+
+export function renderScore(players) {
+  scoreList.innerHTML = "";
+  players.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = `${item.name}: ${item.score}`;
+    scoreList.appendChild(li);
+  });
 }
